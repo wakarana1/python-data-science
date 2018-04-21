@@ -1,0 +1,62 @@
+# what is data science?
+
+## intersection of CS, math and stats, domain knowledge and how to communicate the data.
+
+> SELF NOTE: Look into Kaggle
+
+> SELF NOTE: build a recommendation system? Movies? -> IMDB Food? -> Yelp
+
+data science process:
+- business goals
+- data gathering
+- data prep
+- model
+- evaluation
+- implementaiton
+
+# PANDA
+Pandas is a py library that makes py similar to R
+  helps you read strutctured data
+  primary objects are DataFrames
+
+
+```python
+import pandas as pd
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+df = pd.read_csv('kc_house_data.csv')
+```
+
+# Types of variables for DS
+categorical variable
+  df['zipcode'].nunique() # number of unique, similar to sql distinct
+  df['zipcode'].unique() # gives unique values
+  df['zipcode'].value_counts() # similar to sql grou_by
+
+numeric varaible
+  mean - avg
+  median - middle
+  mode - most frequent
+
+df.describe() # shows descriptive stats
+
+Data scientists read data, sees if data is good or bad or has outliers
+as a DS, you cannot assume, you have to verify
+
+prepping, or getting data, cleaning data, preparing data, is 70% of Data Scientists' work
+
+# LINEAR REGRESSION
+linear regression - y = mx + b
+m = slope of line
+b = y intercept
+x = input or independent variable
+y = dependent variable
+
+but how do we know if model is good?
+  statistics rvalue, pvalue
+
+go back to dataset, compare price
+
+to reduce the error, add more variables
+the smaller the error, the better the model
